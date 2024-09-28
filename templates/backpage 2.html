@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .notes-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .notes-list li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .notes-list li:hover {
+            background-color: #f0f0f0;
+        }
+        .download-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Download Your Notes</h1>
+        <ul class="notes-list">
+            <!-- Example list items, these will be dynamically populated by backend -->
+            <li>
+                <span>Note 1: Introduction to AI</span>
+                <a href="C:\Users\Admin\Downloads\hackthon\responsive-book-website-main\SIH\bookshub\bookshub\Resource\OS INSEM 1.pdf" class="download-btn">Download</a>
+            </li>
+            <li>
+                <span>Note 2: Data Science Basics</span>
+                <a href="/download/note2.pdf" class="download-btn">Download</a>
+            </li>
+            <li>
+                <span>Note 3: Advanced Algorithms</span>
+                <a href="/download/note3.pdf" class="download-btn">Download</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

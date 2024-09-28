@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload and Download Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .file-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .file-list li {
+      padding: 10px;
+      margin-bottom: 5px;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #ccc;
+    }
+
+    .file-list a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .file-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Upload and Download Notes</h1>
+
+    <form id="upload-form" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" required />
+      <button type="submit">Upload</button>
+    </form>
+
+    <h2>Available Notes</h2>
+    <ul class="file-list" id="file-list">
+      <!-- Files will be listed here -->
+      <li>
+        <span>OS Insem 1</span>
+        <a href="bookshub\bookshub\Resource\OS INSEM 1.pdf" download>Download</a>
+      </li>
+      <!-- Additional files will be dynamically populated -->
+    </ul>
+  </div>
+
+  <script>
+    // You can add JavaScript here to handle form submissions and updates dynamically.
+  </script>
+</body>
+</html>

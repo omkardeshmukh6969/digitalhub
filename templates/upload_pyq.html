@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PYQs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Past Year Question Papers (PYQs)</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <!-- Serial Number Input -->
+            <div class="form-group">
+                <label for="pyq_serial_no">Serial Number:</label>
+                <input type="text" id="pyq_serial_no" name="pyq_serial_no" class="form-control" required>
+            </div>
+            
+            <!-- Year Input -->
+            <div class="form-group">
+                <label for="pyq_year">Year:</label>
+                <input type="number" id="pyq_year" name="pyq_year" class="form-control" required>
+            </div>
+
+            <!-- Subject Input -->
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+                <label for="file">Upload PDF:</label>
+                <input type="file" id="file" name="file" class="form-control-file" accept=".pdf" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Upload PYQ</button>
+        </form>
+        <!-- Flash Messages Display -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>

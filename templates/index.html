@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGI-LABS</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- <link rel="stylesheet" href="seow/styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/css/drop.css">
+</head>
+<body>
+    
+  <section class="job-search-section">
+    <div class="container-nav">
+      <h2 class="section-title">DIGI<span> LABS</span></h2>
+      <form class="search-form" (ngSubmit)="onSubmit()">
+        <div class="input-group">
+          <label for="searchInput" class="visually-hidden">Search for tasks or worker</label>
+          <input type="text" id="searchInput" placeholder="Search any PDF you want !!" class="search-input" />
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/14bee0bbb12d2f4804a9b9e4e4606e502cebe20d45d7673f5a82548f81b2b830?placeholderIfAbsent=true&apiKey=7d34c187c61d4dedb88861d765416b13" alt="" class="search-icon" />
+        </div>
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </div>
+  </section>
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+
+<section class="hero-section">
+  <div class="card-grid">
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.)"></div>
+      <div class="card__content">
+        <p class="card__category">Notes</p>
+        <h3 class="card__heading">Download notes for all subjects.</h3>
+        <!-- <button type="button" class="btn btn-dark">Click</button> -->
+
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+      <div class="card__content">
+        <p class="card__category">PYQs</p>
+        <h3 class="card__heading">Get previous year question papers.</h3>
+        <!-- <button type="button" class="btn btn-dark">Click</button> -->
+
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+      <div class="card__content">
+        <p class="card__category">Research Paper</p>
+        <h3 class="card__heading">Access To Research Papers</h3>
+        <!-- <button type="button" class="btn btn-dark">Click</button> -->
+
+      </div>
+    </li>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+      <div class="card__content">
+        <p class="card__category">Audio-Books</p>
+        <h3 class="card__heading">Comming soon</h3>
+        <!-- <button type="button" class="btn btn-dark">Dark</button> -->
+
+      </div>
+    </a>
+  <div>
+</section>
+
+<hr class="custom-line">
+
+<!-- Content -->
+<!--  
+ <section class="btn">
+    
+    <a href="seow/index.html">
+    <button><span class="text siz">Click here</span></button>
+    </a>
+ </section> -->
+
+ <header>
+    <div class="container" style=" padding-bottom: 220px;">
+    <input type="checkbox" name="check" id="check">
+
+    <div class="nav-btn">
+      <div class="nav-links">
+        <ul>
+            <li class="nav-link" style="--i: .85s">
+                <a href="#">FIRST YEAR<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown">
+                  <ul>
+                    <li class="dropdown-link">
+                      <a href="backpage 2.html">NOTES</a>
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#">PYQs</a>
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#">Audio Books</a>
+                    </li>
+                 
+                    <div class="arrow"></div>
+                  </ul>
+                </div>
+              </li>
+          <li class="nav-link" style="--i: .85s">
+            <a href="#">SECOND YEAR<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link">
+                    <a href="#">CS<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li>
+                <li class="dropdown-link">
+                    <a href="#">IT<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li>
+                <li class="dropdown-link">
+                  <a href="#">ENTC<i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown second">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">NOTES</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">PYQs</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Audio Books</a>
+                      </li>
+                   
+                      <div class="arrow"></div>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-link">
+                    <a href="#">AIDS<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                </li>
+                <li class="dropdown-link">
+                    <a href="#">ELC<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                </li>
+                <div class="arrow"></div>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: .85s">
+            <a href="#">THIRD YEAR<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link">
+                    <a href="#">CS<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li>
+                <li class="dropdown-link">
+                    <a href="#">IT<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li>
+                <li class="dropdown-link">
+                  <a href="#">ENTC<i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown second">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">NOTES</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">PYQs</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Audio Books</a>
+                      </li>
+                   
+                      <div class="arrow"></div>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-link">
+                    <a href="#">AIDS<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                </li>
+                <li class="dropdown-link">
+                    <a href="#">ELC<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                </li>
+                <div class="arrow"></div>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: .85s">
+            <a href="#">FORTH YEAR<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link">
+                    <a href="#">CS<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li>
+                <li class="dropdown-link">
+                    <a href="#">IT<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li>
+                <li class="dropdown-link">
+                  <a href="#">ENTC<i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown second">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">NOTES</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">PYQs</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Audio Books</a>
+                      </li>
+                   
+                      <div class="arrow"></div>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-link">
+                    <a href="#">AIDS<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                </li>
+                <li class="dropdown-link">
+                    <a href="#">ELC<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">NOTES</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">PYQs</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Audio Books</a>
+                        </li>
+                     
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                </li>
+                <div class="arrow"></div>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hamburger-menu-container">
+      <div class="hamburger-menu">
+        <div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+ <hr class="custom-line">
+ <h2 class="features-title">Our Features</h2>
+
+ <section class="services">
+  
+  <div class="service-item">
+      <i  class="fa-solid fa-book-open-reader"></i>
+      <h2>100+ E-Books</h2>
+  </div>
+  <div class="service-item">
+    <i class="fa-solid fa-headset"></i>
+      <h2>Audiobooks</h2>
+  </div>
+  <div class="service-item">
+    <i class="fa-regular fa-newspaper"></i>
+      <h2>Research Papers</h2>
+  </div>
+  <div class="service-item">
+    <i class="fa-solid fa-note-sticky"></i>
+      <h2>Previous Year Papers</h2>
+  </div>
+</section>
+
+<hr class="custom-line">
+
+<!-- our top  -->
+ <!--===========About Us===============-->
+ <section class="about">
+  <div class="about-img">
+      <img src="https://media.istockphoto.com/id/1184299091/vector/mouse-connected-to-a-book-icon-trendy-vector-thin-line-illustration-for-concepts-of-online.jpg?s=612x612&w=0&k=20&c=lm7d-y6L6tj35ETOedsG-hLL1tU9D1FzzRbZ-y3LmaM=">
+  </div>
+  <div class="about-text">
+      <small>ABOUT OUR WEBSITE</small>
+      <h2></h2>
+      <p>At DIGI-LABS, we believe that knowledge should be accessible to everyone. Our extensive collection of digital resources includes eBooks, audiobooks, research papers, and multimedia content, all available at your fingertips. Whether you're a student, researcher, or simply a curious mind, our library is designed to inspire and inform.</p>
+
+      <label><input type="checkbox" checked>  Lorem ipsum dolor sit amet</label>
+      <label><input type="checkbox" checked>  consectetur adipisicing elit</label>
+      <label><input type="checkbox" checked>  Architecto atque consequuntur</label>
+      <label><input type="checkbox" checked>  cupiditate doloremque ducimus</label>
+      <a href="#">ABOUT US</a>
+  </div>
+</section>
+
+<hr class="custom-line">
+
+
+    <!-- Footer -->
+
+<section>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>DIGI-LABS</h3>
+            <p>Your one-stop solution for the Books.</p>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#books">Books</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>Email: support@vv.com</li>
+              <li>Phone: +855 (123) 123-123</li>
+              <li>Address: nv pp yg ng</li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <div id="down">
+                    <div class="icons" ></div>
+                      <div>   
+                         <a href="#" class="footer__social"><i class='fa-brands fa-linkedin'></i></a>
+                         <a href="#" class="footer__social"><i class='fa-regular fa-envelope'></i></a>
+                         <a href="#" class="footer__social"><i class="fa-brands fa-whatsapp"></i></a >         
+                         <a href="#" class="footer__social"><i class="fa-brands fa-instagram"></i></a>   
+                     </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="custom-line">
+
+        <div class="footer-bottom">
+          <p>&copy;All Rights Reserved | <a href="#privacy-policy">Privacy Policy</a></p>
+        </div>
+      </footer>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src=>"static/js/maindashboard.js"</script>
+</body>
+</html>

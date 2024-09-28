@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Notes</title>
+</head>
+<body>
+    <h2>Upload Notes</h2>
+    <form method="POST" action="{{ url_for('upload_file') }}" enctype="multipart/form-data">
+        <!-- Note Title -->
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter note title" required>
+        </div>
+
+        <!-- Year Selection (FE, SE, TE, BE) -->
+        <div>
+            <label for="year">Year:</label>
+            <select id="year" name="year" required>
+                <option value="">Select Year</option>
+                <option value="FE">FE (First Year)</option>
+                <option value="SE">SE (Second Year)</option>
+                <option value="TE">TE (Third Year)</option>
+                <option value="BE">BE (Final Year)</option>
+            </select>
+        </div>
+
+        <!-- Subject -->
+        <div>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+        </div>
+
+        <!-- Chapter Name -->
+        <div>
+            <label for="chapter_name">Chapter Name:</label>
+            <input type="text" id="chapter_name" name="chapter_name" placeholder="Enter chapter name" required>
+        </div>
+
+        <!-- File Upload -->
+        <div>
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" accept=".pdf" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
+
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
